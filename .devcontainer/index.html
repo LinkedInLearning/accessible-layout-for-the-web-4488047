@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Semantic HTML Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Semantic HTML Anti-pattern Demo</h1>
+  <p>Click or hover over the buttons to trigger actions:</p>
+
+  <div class="buttonContainer">
+    <!-- Incorrect: Using a div as a button -->
+    <div class="button incorrect-button" tabindex="0" role="button" aria-label="Click me">Click me (Div)</div>
+
+    <!-- Correct: Using a semantic button element -->
+    <button class="button correct-button" aria-label="Click me">Click me (Button)</button>
+  </div>
+
+  <p>Status:</p>
+  <p id="status">No action triggered yet.</p>
+
+  <script>
+    const incorrectButton = document.querySelector(".incorrect-button");
+    incorrectButton.addEventListener("click", function () {
+      document.getElementById("status").textContent = "Action triggered using the div-based button!";
+    });
+
+    const correctButton = document.querySelector(".correct-button");
+    correctButton.addEventListener("click", function () {
+      document.getElementById("status").textContent = "Action triggered using the semantic button!";
+    });
+  </script>
+</body>
+
+</html>
