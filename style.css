@@ -1,0 +1,68 @@
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Accessible focus style (after enhancement) */
+.button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Style for form elements */
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+label {
+  font-size: 16px;
+}
+
+/* Incorrect tab order */
+#email {
+  order: 1;
+}
+
+#checkbox {
+  order: 2;
+}
+
+#name {
+  order: 3;
+}
+
+/* Style for skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  /* Move off-screen, but still accessible */
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+}
