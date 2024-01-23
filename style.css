@@ -1,3 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 3rem;
+}
+
+p {
+  color: #666;
+  font-size: 1.5rem;
+}
+
 .button {
   background-color: #007bff;
   color: #fff;
@@ -9,8 +25,57 @@
 
 /* Accessible focus style (after enhancement) */
 .button:focus {
-  outline: 2px solid #007bff;
-  outline-offset: 2px;
+  outline: 3px solid #007bff;
+  outline-offset: 3px;
+}
+
+
+/* Style for skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  /* Move off-screen, but still accessible */
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+}
+
+.skip-link:focus {
+  left: 25px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
 }
 
 /* Style for form elements */
@@ -24,6 +89,39 @@ label {
   font-size: 16px;
 }
 
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 30px 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: flex;
+  margin: 10px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
 /* Incorrect tab order */
 #email {
   order: 1;
@@ -35,34 +133,4 @@ label {
 
 #name {
   order: 3;
-}
-
-/* Style for skip link */
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  /* Move off-screen, but still accessible */
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px;
-}
-
-.skip-link:focus {
-  left: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-nav {
-  background-color: #444;
-  color: #fff;
-  padding: 10px;
-}
-
-main {
-  padding: 20px;
 }
