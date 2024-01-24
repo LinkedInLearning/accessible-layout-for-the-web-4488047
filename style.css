@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+table {
+  width:60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #e2e8f0;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+
+th {
+  background-color: #4d629d;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+tr:nth-child(odd) {
+  background-color: #f7fafc;
+}
+
+
+tr:hover {
+  background-color: #edf2f7;
+}
