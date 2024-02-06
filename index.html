@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The FlowerShop: Inaccessible Website Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>The FlowerShop</h1>
+    <button class="hamburger-menu">
+      ☰
+    </button>
+    <div class="navbar-links">
+      <a href="#">Home</a>
+      <a href="#">Our Flowers</a>
+      <a href="#">Special Offers</a>
+      <a href="#">Order Flowers</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-section">
+      <div class="flower-story">
+        <h3>The FlowerShop</h3>
+        <p>In the heart of a small town, there was a garden known by few, filled with the most exquisite flowers one
+          could
+          ever see. Among these, a particular flower stood out—not for its color or shape, but for its ability to bloom
+          in
+          the
+          harshest of winters. This flower, known as the Winter Bloom, became a symbol of resilience and hope for the
+          townsfolk. It reminded everyone that even during the coldest and darkest times, life finds a way to express
+          beauty
+          and strength. The Winter Bloom inspired the opening of The FlowerShop, a place dedicated to sharing the beauty
+          and
+          resilience of flowers with the world.</p>
+        <button>Send Flowers</button>
+      </div>
+
+      <div class="featured-flowers">
+        <img src="./assets/featured-flowers.jpeg" width="600">
+        <p>Discover our hand-picked selection of beautiful flowers for every occasion.</p>
+      </div>
+    </div>
+
+    <div class="florist-service">
+      <h4>Flower Service at TheFlowerShop</h4>
+      <p>
+        Experience the utmost convenience of our flower delivery service, making it simpler than ever to send love and
+        affection
+        to your beloved ones. No matter the occasion - be it a birthday, anniversary, wedding, or any special
+        event,
+        our carefully designed floral arrangements serve as the ideal way to convey your emotions. Explore our diverse
+        collection, pick your favorite bouquet, and leave the rest to us. Our proficient team of florists will
+        meticulously
+        arrange and swiftly deliver your chosen bouquet, ensuring a seamless experience.
+
+        TheFlowerShop will deliver your flower-gift with great care.
+
+        Offers the most stunning flower arrangements and bouquets, carefully crafted and personally delivered by their
+        skilled
+        florists to your doorstep.
+        The flowers are personally handed over.
+
+        Complete your flower gift with a Nijntje stuffed animal or a delicious box of chocolates.
+      </p>
+    </div>
+
+    <div class="price-list">
+      <table>
+        <tr>
+          <th>Flower Type</th>
+          <th>Price</th>
+          <th>Availability</th>
+        </tr>
+        <tr>
+          <td>Roses</td>
+          <td>$20 per dozen</td>
+          <td class="stock-status in-stock">In Stock</td>
+        </tr>
+        <tr>
+          <td>Tulips</td>
+          <td>$15 per dozen</td>
+          <td class="stock-status in-stock">In Stock</td>
+        </tr>
+        <tr>
+          <td>Lilies</td>
+          <td>$22 per dozen</td>
+          <td class="stock-status sold-out">Sold Out</td>
+        </tr>
+        <tr>
+          <td>Sunflowers</td>
+          <td>$18 per dozen</td>
+          <td class="stock-status in-stock">In Stock</td>
+        </tr>
+        <tr>
+          <td>Daisies</td>
+          <td>$12 per dozen</td>
+          <td class="stock-status sold-out">Sold Out</td>
+        </tr>
+        <tr>
+          <td>Orchids</td>
+          <td>$30 per dozen</td>
+          <td class="stock-status in-stock">In Stock</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="customer-feedback">
+      <h2>What Do Our Customers Say</h2>
+      <div class="feedback-carousel">
+        <div class="feedback">
+          <p>"Loved The FlowerShop! Great selection and friendly staff. Found the perfect bouquet for my new home.
+            Highly recommend!"</p>
+          <p class="customer-name">Sarah Johnson</p>
+          <p class="location">Austin, Texas</p>
+        </div>
+
+        <div class="feedback">
+          <p>"Exceptional service for my partner’s birthday flowers. The bouquet was stunning and delivered on time.
+            Truly impressed!"</p>
+          <p class="customer-name">Michael Chen</p>
+          <p class="location">Brookyln - New York</p>
+        </div>
+
+        <div class="feedback">
+          <p>"My go-to flower shop for years. Always exceed expectations for all occasions. Great attention to detail
+            and
+            sustainability. A must-visit in Miami!"</p>
+          <p class="customer-name">Emma Rodriguez</p>
+          <p class="location">Austin - Texas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter-signup">
+      <h2>Sign Up for Our Newsletter</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy 2024 The FlowerShop. All Rights Reserved.</p>
+  </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var hamburger = document.querySelector('.hamburger-menu');
+    var navLinks = document.querySelector('.navbar-links');
+
+    hamburger.addEventListener('click', function () {
+      navLinks.classList.toggle('active');
+    });
+  });
+
+</script>
+
+</html>
