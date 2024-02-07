@@ -9,23 +9,23 @@
 </head>
 
 <body>
-  <div class="navbar">
+  <section class="navbar">
     <h1>The FlowerShop</h1>
-    <button class="hamburger-menu">
+    <button class="hamburger-menu" aria-label="Open Navigation Menu">
       ☰
     </button>
-    <div class="navbar-links">
+    <nav class="navbar-links">
       <a href="#">Home</a>
       <a href="#">Our Flowers</a>
       <a href="#">Special Offers</a>
       <a href="#">Order Flowers</a>
-    </div>
-  </div>
+    </nav>
+  </section>
 
-  <div class="container">
-    <div class="hero-section">
-      <div class="flower-story">
-        <h3>The FlowerShop</h3>
+  <section class="container">
+    <section class="hero-section">
+      <article class="flower-story">
+        <h2>The FlowerShop</h2>
         <p>In the heart of a small town, there was a garden known by few, filled with the most exquisite flowers one
           could
           ever see. Among these, a particular flower stood out—not for its color or shape, but for its ability to bloom
@@ -37,17 +37,18 @@
           and strength. The Winter Bloom inspired the opening of The FlowerShop, a place dedicated to sharing the beauty
           and
           resilience of flowers with the world.</p>
-        <button>Send Flowers</button>
-      </div>
+        <button arial-label="Send flowers online">Send Flowers</button>
+      </article>
 
-      <div class="featured-flowers">
-        <img src="./assets/featured-flowers.jpeg" width="600">
+      <aside class="featured-flowers">
+        <img src="./assets/featured-flowers.jpeg" width="600"
+          alt="Hand-picked selection of beautiful flowers for every occasion">
         <p>Discover our hand-picked selection of beautiful flowers for every occasion.</p>
-      </div>
-    </div>
+      </aside>
+    </section>
 
-    <div class="florist-service">
-      <h4>Flower Service at TheFlowerShop</h4>
+    <section class="florist-service">
+      <h2>Flower Service at TheFlowerShop</h2>
       <p>
         Experience the utmost convenience of our flower delivery service, making it simpler than ever to send love and
         affection
@@ -67,88 +68,95 @@
 
         Complete your flower gift with a Nijntje stuffed animal or a delicious box of chocolates.
       </p>
-    </div>
+    </section>
 
-    <div class="price-list">
+    <section class="price-list">
       <table>
-        <tr>
-          <th>Flower Type</th>
-          <th>Price</th>
-          <th>Availability</th>
-        </tr>
-        <tr>
-          <td>Roses</td>
-          <td>$20 per dozen</td>
-          <td class="stock-status in-stock">In Stock</td>
-        </tr>
-        <tr>
-          <td>Tulips</td>
-          <td>$15 per dozen</td>
-          <td class="stock-status in-stock">In Stock</td>
-        </tr>
-        <tr>
-          <td>Lilies</td>
-          <td>$22 per dozen</td>
-          <td class="stock-status sold-out">Sold Out</td>
-        </tr>
-        <tr>
-          <td>Sunflowers</td>
-          <td>$18 per dozen</td>
-          <td class="stock-status in-stock">In Stock</td>
-        </tr>
-        <tr>
-          <td>Daisies</td>
-          <td>$12 per dozen</td>
-          <td class="stock-status sold-out">Sold Out</td>
-        </tr>
-        <tr>
-          <td>Orchids</td>
-          <td>$30 per dozen</td>
-          <td class="stock-status in-stock">In Stock</td>
-        </tr>
-      </table>
-    </div>
+        <thead>
+          <tr>
+            <th scope="col">Flower Type</th>
+            <th scope="col">Price</th>
+            <th scope="col">Availability</th>
+          </tr>
+        </thead>
+        <tbody>
 
-    <div class="customer-feedback">
-      <h2>What Do Our Customers Say</h2>
-      <div class="feedback-carousel">
-        <div class="feedback">
+          <tr>
+            <td>Roses</td>
+            <td>$20 per dozen</td>
+            <td class="stock-status in-stock">In Stock</td>
+          </tr>
+          <tr>
+            <td>Tulips</td>
+            <td>$15 per dozen</td>
+            <td class="stock-status in-stock">In Stock</td>
+          </tr>
+          <tr>
+            <td>Lilies</td>
+            <td>$22 per dozen</td>
+            <td class="stock-status sold-out">Sold Out</td>
+          </tr>
+          <tr>
+            <td>Sunflowers</td>
+            <td>$18 per dozen</td>
+            <td class="stock-status in-stock">In Stock</td>
+          </tr>
+          <tr>
+            <td>Daisies</td>
+            <td>$12 per dozen</td>
+            <td class="stock-status sold-out">Sold Out</td>
+          </tr>
+          <tr>
+            <td>Orchids</td>
+            <td>$30 per dozen</td>
+            <td class="stock-status in-stock">In Stock</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="customer-feedback">
+      <h3>What Do Our Customers Say</h3>
+      <section class="feedback-carousel">
+        <article class="feedback">
           <p>"Loved The FlowerShop! Great selection and friendly staff. Found the perfect bouquet for my new home.
             Highly recommend!"</p>
-          <p class="customer-name">Sarah Johnson</p>
+          <h4 class="customer-name">Sarah Johnson</h4>
           <p class="location">Austin, Texas</p>
-        </div>
+        </article>
 
-        <div class="feedback">
+        <article class="feedback">
           <p>"Exceptional service for my partner’s birthday flowers. The bouquet was stunning and delivered on time.
             Truly impressed!"</p>
-          <p class="customer-name">Michael Chen</p>
+          <h4 class="customer-name">Michael Chen</h4>
           <p class="location">Brookyln - New York</p>
-        </div>
+        </article>
 
-        <div class="feedback">
+        <article class="feedback">
           <p>"My go-to flower shop for years. Always exceed expectations for all occasions. Great attention to detail
             and
             sustainability. A must-visit in Miami!"</p>
-          <p class="customer-name">Emma Rodriguez</p>
+          <h4 class="customer-name">Emma Rodriguez</h4>
           <p class="location">Austin - Texas</p>
-        </div>
-      </div>
-    </div>
+        </article>
+      </section>
+    </section>
 
-    <div class="newsletter-signup">
-      <h2>Sign Up for Our Newsletter</h2>
+    <section class="newsletter-signup">
+      <h3>Sign Up for Our Newsletter</h3>
       <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Email Address">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Email Address">
         <button type="submit">Subscribe</button>
       </form>
-    </div>
-  </div>
+    </section>
+  </section>
 
-  <div class="footer">
+  <footer>
     <p>&copy 2024 The FlowerShop. All Rights Reserved.</p>
-  </div>
+  </footer>
 </body>
 <script>
   document.addEventListener('DOMContentLoaded', function () {

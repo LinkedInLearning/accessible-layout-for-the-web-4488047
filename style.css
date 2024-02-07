@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  background-color: #4CAF50;
+  background-color: #2F38E4;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ p {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #2F38E4;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -111,7 +111,7 @@ td {
 }
 
 th {
-  background-color: #4CAF50;
+  background-color: #2F38E4;
   color: white;
 }
 
@@ -124,7 +124,7 @@ tr:hover {
 }
 
 .in-stock {
-  color: #388E3C;
+  color: #2F38E4;
   font-weight: bold;
 }
 
@@ -159,7 +159,7 @@ blockquote {
   font-weight: bold;
 }
 
-.footer {
+footer {
   background-color: #333;
   color: white;
   padding: 10px 20px;
