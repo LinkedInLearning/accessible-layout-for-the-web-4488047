@@ -39,5 +39,5 @@ Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learn
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
 [lil-course-url]: https://www.linkedin.com/learning/accessible-layout-for-the-web
-[lil-thumbnail-url]: http://
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQH23NLY2hQeNQ/learning-public-crop_675_1200/0/1712947676463?e=2147483647&v=beta&t=TWYz1l0YkZ1UQDy46ZAol2b0NziVeTF0G4GEAExAUXs
 
